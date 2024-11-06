@@ -95,7 +95,7 @@ namespace UploadFilesToDrive
                 return;
             }
 
-            txtResult.Text = "Đang upload...";
+            txtResult.Text = "Đang upload....";
             cancellationTokenSource = new CancellationTokenSource();
 
             // Tạo một danh sách tạm thời để lưu các file cần upload
@@ -112,7 +112,7 @@ namespace UploadFilesToDrive
         // Kiểm tra xem thư mục đã tồn tại chưa và tạo mới nếu chưa
         private async Task<string> GetOrCreateFolder(string folderName)
         {
-            // Kiểm tra xem thư mục đã tồn tại chưa
+            // Kiểm tra thư mục đã tồn tại chưa
             var folderId = await FindFolderId(folderName);
             if (string.IsNullOrEmpty(folderId))
             {
