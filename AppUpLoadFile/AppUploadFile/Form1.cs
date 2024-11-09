@@ -1,4 +1,4 @@
-﻿using Google;
+using Google;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
@@ -108,7 +108,6 @@ namespace UploadFilesToDrive
 
             txtResult.AppendText(Environment.NewLine + "Upload hoàn tất.");
         }
-
         // Kiểm tra xem thư mục đã tồn tại chưa và tạo mới nếu chưa
         private async Task<string> GetOrCreateFolder(string folderName)
         {
